@@ -9,11 +9,11 @@ Original file is located at
 
 #web app libraries
 from flask import Flask,request,render_template,flash,url_for,redirect
-from flask_ngrok import run_with_ngrok
+#from flask_ngrok import run_with_ngrok
 
 #OS and Measure Time
 import os
-from time import perf_counter
+#from time import perf_counter
 
 #preprocessing libraries
 from tensorflow.keras.preprocessing.image import load_img,img_to_array,array_to_img,save_img
@@ -99,7 +99,7 @@ def predict_the_class(model,image):
 
 
 app=Flask(__name__)
-run_with_ngrok(app)
+#run_with_ngrok(app)
 
 app.config['SECRET_KEY']="LoL 13 NoOne Can Guess This Key XD"
 #app.config['DEBUG']=True
